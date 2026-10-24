@@ -24,6 +24,6 @@ Sachlicher Widerspruch ist willkommen. Bitte bleib beim Text und bei der konkret
 
 ## Persönlicher Kontakt
 
-Wenn du kein GitHub-Konto nutzen möchtest oder dein Anliegen privat bleiben soll, kannst du die [Kontaktadresse für Leserhinweise](mailto:maximilian.warden%2Bscriptisverbis@gmail.com?subject=Leserhinweis%20zu%20Scriptis%20Verbis) nutzen. E-Mails werden nicht automatisch als öffentliche Meldungen übernommen.
+Wenn du kein GitHub-Konto nutzen möchtest oder dein Anliegen privat bleiben soll, kannst du die [Kontaktadresse für Leserhinweise](mailto:scriptisverbis@gmail.com?subject=Leserhinweis%20zu%20Scriptis%20Verbis) nutzen. E-Mails werden nicht automatisch als öffentliche Meldungen übernommen.
 
 Zur [Website der Buchreihe](https://scriptisverbis.com/).
