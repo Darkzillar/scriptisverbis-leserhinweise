@@ -1,0 +1,82 @@
+name: Leserhinweis
+description: Einen möglichen Fehler in einem Buch, Film, Hörbuch oder auf der Website melden.
+title: "[Hinweis] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass du beim Weiterentwickeln der Reihe hilfst. Bitte beschreibe pro Meldung einen Fund und nenne eine möglichst genaue Stelle.
+
+        **Diese Meldung ist öffentlich.** Schreibe den Titel möglichst ohne Handlungsdetails. Im Text können Spoiler stehen; nenne deshalb den betroffenen Band. Veröffentliche keine persönlichen Daten und keine vollständigen Kapitel, Buchdateien oder Manuskripte. Ein kurzer Ausschnitt von ein bis zwei Sätzen genügt meistens.
+
+        Schau bitte kurz nach, ob der Hinweis bereits unter „Issues“ erfasst ist. Ergänzungen zu einer bestehenden Meldung helfen, zusammengehörige Hinweise an einer Stelle zu sammeln.
+  - type: dropdown
+    id: bereich
+    attributes:
+      label: Wo ist dir etwas aufgefallen?
+      options:
+        - Buch
+        - Hörbuch
+        - Rückblickfilm
+        - Philosophisches Gespräch
+        - Website oder Begleittext
+    validations:
+      required: true
+  - type: input
+    id: werk
+    attributes:
+      label: Buch, Band oder Beitrag
+      description: Nenne den Buchtitel und möglichst die Bandnummer. Bei einer Website kannst du hier auch die Seitenadresse angeben.
+      placeholder: "Zum Beispiel: Initio, Gesamtband 3"
+    validations:
+      required: true
+  - type: input
+    id: ausgabe
+    attributes:
+      label: Ausgabe oder Stand (falls bekannt)
+      description: Etwa E-Book oder Taschenbuch, Ausgabedatum, ISBN oder Zeitpunkt des Downloads. Wenn du es nicht weißt, lass das Feld frei.
+    validations:
+      required: false
+  - type: input
+    id: fundstelle
+    attributes:
+      label: Fundstelle
+      description: Kapitel und Seite oder E-Book-Position; bei Filmen die Zeitmarke; bei Webseiten die Adresse und Abschnittsüberschrift. Falls eine Angabe nicht verfügbar ist, beschreibe die Stelle kurz.
+      placeholder: "Zum Beispiel: Kapitel 4, Seite 38; oder Film 12:45; oder URL und Überschrift"
+    validations:
+      required: true
+  - type: dropdown
+    id: art
+    attributes:
+      label: Welche Art von Hinweis ist es?
+      options:
+        - Schreibweise oder Grammatik
+        - Name, Zeitangabe oder Kontinuität
+        - Sachangabe oder Quelle
+        - Darstellung, Formatierung oder Link
+        - Ton, Bild, Untertitel oder Zeitmarke
+        - Verständnisfrage oder Anregung
+        - Etwas anderes
+    validations:
+      required: true
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: Was ist dir aufgefallen?
+      description: Beschreibe deinen Fund möglichst konkret. Ein kurzer Textausschnitt kann beim Wiederfinden helfen. Bei einem möglichen Widerspruch nenne bitte auch die zweite Stelle, wenn du sie kennst.
+    validations:
+      required: true
+  - type: textarea
+    id: vorschlag
+    attributes:
+      label: Was wäre aus deiner Sicht richtig oder verständlicher?
+      description: Ein Korrekturvorschlag oder eine Quellenangabe ist hilfreich, aber keine Voraussetzung. Bei einer Verständnisfrage kannst du beschreiben, was unklar geblieben ist.
+    validations:
+      required: false
+  - type: checkboxes
+    id: oeffentlichkeit
+    attributes:
+      label: Vor dem Absenden
+      options:
+        - label: Mir ist bewusst, dass die Meldung öffentlich erscheint. Sie enthält keine privaten Daten oder vollständigen Buchtexte; der Titel verrät keine Handlung.
+          required: true
